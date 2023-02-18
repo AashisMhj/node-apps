@@ -1,25 +1,20 @@
-const {GraphQLObjectType, GraphQLString, GraphQLBoolean, GraphQLInt, } = require('graphql');
-
-const PositionSchema = new GraphQLObjectType({
-    name: 'Position',
-    fields: ()=>({
-        longitude: {type: GraphQLInt},
-        latitude: {type: GraphQLInt}
-    })
-});
+const {GraphQLObjectType, GraphQLString, GraphQLBoolean, GraphQLInt, GraphQLList, } = require('graphql');
 
 const ShipType = new GraphQLObjectType({
     name: 'Ship',
     fields: ()=>({
-        ship_id: {type: GraphQLString},
-        ship_name: {type: GraphQLString},
-        ship_type: {type: GraphQLString},
-        // roles: PositionSchema],
+        roles: {type: new GraphQLList(GraphQLString)},
+        id: {type: GraphQLString},
+        name: {type: GraphQLString},
+        type: {type: GraphQLString},
         active: {type: GraphQLBoolean},
-        position: {type: PositionSchema},
-        url: {type: GraphQLString},
-        image: {type: GraphQLString}
+        link: {type: GraphQLString},
+        image: {type: GraphQLString},
+        year_built: {type: GraphQLInt},
+        home_port: {type: GraphQLString},
+        launches: {type: new GraphQLList(GraphQLString)}
     })
-});
+})
+
 
 module.exports = ShipType;

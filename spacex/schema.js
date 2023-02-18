@@ -24,10 +24,10 @@ const RootQuery = new GraphQLObjectType({
         launch: {
             type: LaunchType,
             args: {
-                flight_number: {type: GraphQLInt}
+                id: {type: GraphQLString}
             },
             resolve(_, args){
-                return service.getLaunch(args.flight_number)
+                return service.getLaunch(args.id)
                     .then(res => res.data)
                     .catch(error => {})
             }
@@ -43,7 +43,7 @@ const RootQuery = new GraphQLObjectType({
         rocket: {
             type: RocketType,
             args: {
-                id: {type: GraphQLInt}
+                id: {type: GraphQLString}
             },
             resolve(_, args){
                 return service.getRocketDetail(args.id)
@@ -56,18 +56,18 @@ const RootQuery = new GraphQLObjectType({
             resolve(_, args){
                 return service.getShips()
                     .then(res => res.data)
-                    .catch(() => [])
+                    .catch((error) => [])
             }
         },
         ship: {
             type: ShipType,
             args: {
-                rocket_name: {type: GraphQLString}
+                id: {type: GraphQLString}
             },
             resolve(parent, args){
-                return service.getShipDetail(args.rocket_name)
+                return service.getShipDetail(args.id)
                     .then(res => res.data)
-                    .catch(() => {})
+                    .catch((error) =>null)
             }
         }
     }
