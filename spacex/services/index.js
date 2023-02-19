@@ -3,7 +3,7 @@ const SPACEX_URL = process.env.SPACEX_URL;
 
 const networkService = {
     getLaunces: () => axios.get(`${SPACEX_URL}/launches`),
-    getLaunch: (flight_number) => axios.get(`${SPACEX_URL}/launches/${flight_number}`),
+    getLaunch: (launch_id) => axios.get(`${SPACEX_URL}/launches/${launch_id}`),
     getRockets: () => axios.get(`${SPACEX_URL}/rockets`),
     getRocketDetail: (rocket_id)=> axios.get(`${SPACEX_URL}/rockets/${rocket_id}`),
     getShips: ()=> axios.get(`${SPACEX_URL}/ships`),

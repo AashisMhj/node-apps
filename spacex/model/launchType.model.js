@@ -14,7 +14,9 @@ const LaunchType = new GraphQLObjectType({
         flight_number: {type: GraphQLInt},
         name: {type: GraphQLString},
         upcoming: {type: GraphQLBoolean},
-        id: {type: GraphQLString}
+        id: {type: GraphQLString},
+        date_local: {type: GraphQLString},
+        success: {type: GraphQLBoolean}
     })
 });
 

@@ -1,6 +1,7 @@
 const express = require('express');
 const {graphqlHTTP} = require('express-graphql');
 const cors = require('cors');
+const morgan = require('morgan');
 require('dotenv').config();
 //
 const schema = require('./schema');
@@ -11,6 +12,7 @@ const app = express();
 
 // app config
 app.use(cors());
+app.use(morgan('common'));
 app.use('/', graphqlHTTP({
     schema,
     graphiql: true // for the ui of graphql
