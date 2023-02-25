@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        .container{
+            width: 50%;
+            margin: auto;
+        }
+        .actions{
+            display: flex;
+            align-items: center;
+        }
+        .actions .btn{
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video controls width="100%" autoplay muted>
+            <source src="<%= "/video/"+name+"?path="+path; %>" type="video/mp4">
+            Embeded video not supported
+        </video>
+        <div class="actions">
+            <a href="<%= "/download/"+name+"?path="+path; %>">
+                <button class="btn">
+                    Download
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
