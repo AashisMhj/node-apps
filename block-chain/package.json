@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "typescript": "^4.9.5"
+  },
+  "name": "block-chain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aashis Maharjan",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/.",
+    "build": "tsc",
+    "dev": "concurrently \" yarn tsc -w \" \"node . \"",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
