@@ -1,0 +1,17 @@
+
+<section class="py-2">
+    <h1 class="text-center mx-5">Browse and Buy</h1>
+    <div class="row">
+        {{#each data}}
+        <div class="col col-lg-4">
+            <div class="card">
+                <img class="card-img-top" src="/images/{{this.image}}" alt="{{this.title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <a href="/book/{{this.id}}">Detail</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div >
+</section >

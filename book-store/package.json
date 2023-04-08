@@ -1,0 +1,20 @@
+{
+  "name": "book-store",
+  "version": "1.0.0",
+  "description": "Nodejs and express app for Book store sales with payment integration",
+  "main": "app.js",
+  "author": "Aashis Maharjan",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "stripe": "^11.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "dev:server": "nodemon app.js"
+  }
+}
