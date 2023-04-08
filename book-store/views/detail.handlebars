@@ -1,0 +1,40 @@
+<section class="py-2">
+
+    <h1 class="text-center">{{data.title}}</h1>
+    <div class="row m-4">
+        <div class="col col-lg-6">
+            <img class="w-75" src="/images/{{data.image}}" alt="">
+        </div>
+        <div class="col col-lg-6">
+            <dl class="row">
+                <dt class="col col-lg-6">Price</dt>
+                <dd class="col col-lg-6">Rs {{data.price}}</dd>
+                <dt class="col col-lg-6">ISBN</dt>
+                <dd class="col col-lg-6">{{data.isbn}}</dd>
+                <dt class="col col-lg-6">Publisher</dt>
+                <dd class="col col-lg-6">{{data.publisher}}</dd>
+                <dt class="col col-lg-6">Author</dt>
+                <dd class="col col-lg-6">{{data.authors}}</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="row m-4">
+        <form class="col col-lg-4 align-self-center" method="POST" action="/charge">
+            <script 
+                src="https://checkout.stripe.com/checkout.js" 
+                class="stripe-button"
+                data-key="{{stripePublishableKey}}" 
+                data-amount="{{data.price}}" 
+                data-name="Book Store"
+                data-description="Testing Payment Gateways" 
+                data-image="/stripe.png" 
+                data-locale="auto">
+            </script>
+            <script>
+                document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+            </script>
+            <button class="btn btn-primary w-100 m-4">Buy</button>
+        </form>
+    </div>
+
+</section>

@@ -1,0 +1,95 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": 
+            "100 Little Things", 
+            "image": "100-little-things.jpeg", 
+            "price": 200,
+            "description": "Millions of readers turn to Marc and Angel Chernoff for fresh, intimate insights for a fulfilled life. In this pithy and empowering guide, they collect the very best advice they’ve discovered, on topics that include overcoming setbacks, letting go of what’s holding us back, nurturing relationships, finding time for self-care, and cultivating passion in order to achieve our wildest dreams.",
+            "isbn": "9780525542742",
+            "publisher": "TarcherPerigee",
+            "authors": "Marc Chernoff and Angel Chernoff"
+        },
+        {
+            "id": 2,
+            "title": "Every Day Hero", 
+            "image": "every-day-hero.jpeg", 
+            "price": 499,
+            "publisher": "-",
+            "isbn": "-",
+            "description": "For over twenty-five years, leadership legend and personal-mastery path-blazer Robin Sharma has mentored billionaires, business titans, professional-sports superstars and entertainment royalty via a revolutionary methodology that led them to accomplish rare-air results. Now, in this groundbreaking book, Sharma makes his transformational system available to anyone who is ready for undefeatable positivity, monumental productivity, deep spiritual freedom and a life of helping others.",
+            "authors": "Robin S. Sharma"
+        },
+        {
+            "id": 3,
+            "title": "EveryThing is Fucked", 
+            "image": "everything-is-fucked.jpeg", 
+            "price": 556,
+            "description": "We live in an interesting time. Materially, everything is the best it’s ever been—we are freer, healthier and wealthier than any people in human history. Yet, somehow everything seems to be irreparably and horribly f*cked—the planet is warming, governments are failing, economies are collapsing, and everyone is perpetually offended on Twitter. At this moment in history, when we have access to technology, education and communication our ancestors couldn’t even dream of, so many of us come back to an overriding feeling of hopelessness.",
+            "isbn": "-",
+            "publisher": "-",
+            "authors": "Mark Manson"
+        },
+        {
+            "id": 4,"title": 
+            "Home Body", 
+            "image": "home-body.jpeg", 
+            "price": 553,
+            "description": "Rupi Kaur constantly embraces growth, and in home body, she walks readers through a reflective and intimate journey visiting the past, the present, and the potential of the self. home body is a collection of raw, honest conversations with oneself – reminding readers to fill up on love, acceptance, community, family, and embrace change. Illustrated by the author, themes of nature and nurture, light and dark, rest here.",
+            "isbn": "-",
+            "publisher": "-",
+            "authors": "Rupi Kaur"
+        },
+        {
+            "id": 5,
+            "title": "It end with Us", 
+            "image": "it-end-with-us.jpeg", 
+            "price": 989,
+            "description": "Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. She’s come a long way from the small town in Maine where she grew up — she graduated from college, moved to Boston, and started her own business. So when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily’s life suddenly seems almost too good to be true.",
+            "isbn": "-",
+            "publisher": "-",
+            "authors": "Colleen Hoover"
+        },
+        {
+            "id": 6,
+            "title": "Mid Night Sun", 
+            "image": "mid-night-sun.jpeg", 
+            "price": 112,
+            "description": "So when my best friend falls hard for a bad-boy rocker who leaves freaky marks on her neck, I figure out pretty quickly he’s a blood-sucking vampire.            ",
+            "isbn": "-",
+            "publisher": "-",
+            "authors": "Laurel Night"
+        },
+        {
+            "id": 7,
+            "title": "Sold", 
+            "image": "sold.jpeg", 
+            "price": 712,
+            "description": "Lakshmi is a thirteen-year-old girl who lives with her family in a small hut in the mountains of Nepal. Her family is desperately poor, but her life is full of simple pleasures, like raising her black-and-white speckled goat, and having her mother brush her hair by the light of an oil lamp. But when the harsh Himalayan monsoons wash away all that remains of the family's crops, Lakshmi's stepfather says she must leave home and take a job to support her family.",
+            "isbn": "-",
+            "publisher": "-",
+            "authors": "Patricia McCormick"
+        },
+        {
+            "id": 8,
+            "title": "The fault in our Star", 
+            "image": "the-fault-in-our-star.jpeg", 
+            "price": 299,
+            "description": "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel's story is about to be completely rewritten.",
+            "isbn": "-",
+            "publisher": "-",
+            "authors": "John Green"
+        },
+        {
+            "id": 9,
+            "title": "Think and grow Rich", 
+            "image": "think-and-grow-rich.png", 
+            "price": 340,
+            "description": "Think and Grow Rich is a guide to success by Napoleon Hill, which was first published in 1937 following the Great Depression. It was immediately welcomed as an antidote to hard times and remained a bestseller for decades. Many people still find its philosophy of positive thinking and its specific steps for achieving wealth both relevant and life-changing. Hill contends that our thoughts become our reality, and offers a plan and principles for transforming thoughts into riches, including visualization, affirmation, creating a Master Mind group, defining a goal, and planning.",
+            "isbn": "-",
+            "publisher": "-",
+            "authors": "Napoleon Hill, Bill Hartley, Ann Hartley, Ben Holden-Crowther, Muhammad Ghous Siddiqui"
+        }
+    ]
+}
