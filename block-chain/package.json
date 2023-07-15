@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "@types/node": "^18.14.6",
-    "typescript": "^4.9.5"
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.6"
   },
   "name": "block-chain",
   "version": "1.0.0",
@@ -11,10 +11,10 @@
   "scripts": {
     "start": "tsc && node dist/.",
     "build": "tsc",
-    "dev": "concurrently \" yarn tsc -w \" \"node . \"",
+    "dev": "concurrently \" tsc -w \" \"node . \"",
     "watch": "tsc -w"
   },
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^8.2.0"
   }
 }

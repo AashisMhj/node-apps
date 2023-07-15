@@ -8,7 +8,6 @@ const { username, room } = Qs.parse(location.search, {
   ignoreQueryPrefix: true
 });
 const socket = io();
-console.log(room);
 // user Join chatroom
 socket.emit('joinRoom', { username, room });
 
@@ -20,7 +19,6 @@ socket.on('roomUsers', ({ room, users }) => {
 
 // Message from server
 socket.on('message', message => {
-  console.log(message);
   outputMessage(message);
 
   // Scroll down

@@ -17,6 +17,6 @@ function getPrivateIp(){
             }
         }
     }
-    return result.wlp3s0[0] || 'Undefined';
+    return result.wlo1 && result.wlo1.length > 0 ? result.wlo1[0] : 'Undefined';
 }
 module.exports = getPrivateIp;

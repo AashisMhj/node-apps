@@ -5,7 +5,6 @@ rooms.add('Home Room');
 function userJoin(id, username, room) {
   const user = { id, username, room };
   rooms.add(room);
-  console.log(rooms);
   users.push(user);
   return user;
 }
@@ -19,12 +18,10 @@ function getCurrentUser(id) {
 function userLeave(id) {
   const index = users.findIndex(user => user.id === id);
   
-  // console.log('rooms)
   if (index !== -1) {
     let user = getCurrentUser(id);
     users.splice(index, 1)[0];
     let no = getRoomUsers(user.room);
-    console.log('no',no.length);
     if(no.length == 0){
       rooms.delete(user.room);
     }

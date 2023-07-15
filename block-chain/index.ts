@@ -107,9 +107,6 @@ class Wallet{
 const bob = new Wallet();
 const john = new Wallet();
 const soto = new Wallet();
-
 bob.sendMoney(50, john.publicKey);
 john.sendMoney(100, soto.publicKey);
 soto.sendMoney(130, bob.publicKey);
-console.log('here');
-console.log(Chain.instance);
