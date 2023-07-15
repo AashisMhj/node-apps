@@ -3,10 +3,10 @@
     <h1 class="text-center">{{data.title}}</h1>
     <div class="row m-4">
         <div class="col col-lg-6">
-            <img class="w-75" src="/images/{{data.image}}" alt="">
+            <img class="w-75" style="aspect-ratio: 1/1; object-fit: contain; object-position: center;" src="/images/{{data.image}}" alt="">
         </div>
-        <div class="col col-lg-6">
-            <dl class="row">
+        <div class="col col-lg-6 ">
+            <dl class="row bg-white rounded-lg p-8">
                 <dt class="col col-lg-6">Price</dt>
                 <dd class="col col-lg-6">Rs {{data.price}}</dd>
                 <dt class="col col-lg-6">ISBN</dt>
@@ -16,6 +16,9 @@
                 <dt class="col col-lg-6">Author</dt>
                 <dd class="col col-lg-6">{{data.authors}}</dd>
             </dl>
+            <div class="row">
+                <div>{{data.description}}</div>
+            </div>
         </div>
     </div>
     <div class="row m-4">
