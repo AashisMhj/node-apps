@@ -3,10 +3,7 @@
     "storage": "./database.sqlite",
     "dialect": "sqlite"
   },
-  "test": {
-    "dialect": "sqlite::memory",
-    "storage": "./test.sqlite"
-  },
+  "test": "sqlite:memory",
   "production": {
     "username": "root",
     "password": null,

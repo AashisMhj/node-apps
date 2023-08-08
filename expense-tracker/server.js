@@ -20,3 +20,5 @@ app.use('/api', routes);
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server Started at ${PORT}`));
+
+module.exports = app;

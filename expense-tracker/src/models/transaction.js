@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   Transaction.init({
     title: DataTypes.STRING,
     amount: DataTypes.NUMBER,
-    type: DataTypes.STRING
+    expense_type: DataTypes.STRING
   }, {
     sequelize,
     paranoid: true,

@@ -10,13 +10,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       title: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        required: true
       },
       amount: {
-        type: Sequelize.NUMBER
+        type: Sequelize.NUMBER,
+        required: true
       },
-      type: {
-        type: Sequelize.STRING
+      expense_type: {
+        type: Sequelize.STRING,
+        required: true
       },
       createdAt: {
         allowNull: false,
