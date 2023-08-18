@@ -1,7 +1,8 @@
 const express = require('express');
-const {graphqlHTTP} = require('express-graphql');
+// const { graphqlHTTP } = require('express-graphql');
 const cors = require('cors');
 const morgan = require('morgan');
+const { createHandler } = require('graphql-http/lib/use/express');
 require('dotenv').config();
 //
 const schema = require('./schema');
@@ -13,9 +14,11 @@ const app = express();
 // app config
 app.use(cors());
 app.use(morgan('common'));
-app.use('/', graphqlHTTP({
-    schema,
-    graphiql: true // for the ui of graphql
-}));
 
-app.listen(PORT, ()=> console.log(`Server Started at ${PORT}`));
+app.all('/graphql', createHandler({
+    schema
+}))
+
+
+app.listen({ port: PORT });
+console.log('Server started at port: '+PORT)

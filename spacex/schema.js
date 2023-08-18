@@ -2,7 +2,6 @@ const {
     GraphQLObjectType,
     GraphQLList,
     GraphQLSchema,
-    GraphQLInt,
     GraphQLString
 } = require('graphql');
 
@@ -11,8 +10,12 @@ const {LaunchType, RocketType, ShipType} = require('./model');
 
 // Root query
 const RootQuery = new GraphQLObjectType({
-    name: 'rootQueryType',
+    name: 'Query',
     fields: {
+        hello: {
+            type: GraphQLString,
+            resolve: () => 'world'
+        },
         launches: {
             type: new GraphQLList(LaunchType),
             resolve(_, args){
