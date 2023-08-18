@@ -7,7 +7,7 @@ Express Server to Server SpaceX api data on graphql.
 * cors
 * morgan 
 * graphql: 
-* express-graphql
+* graphql-http
 ## Dev packages
 * nodemon
 
@@ -16,12 +16,12 @@ Express Server to Server SpaceX api data on graphql.
 * Nodejs
 
 ```bash
-# copy the content of the .env.example and add you stripe keys
+# copy the content of the .env.example to .env
 
 # Install packages
 yarn
 # run dev server
-yarn dev:server
+yarn dev
 ```
 
 
