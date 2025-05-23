@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv/config");
 
 const routes = require("./src/routes");
 const getPrivateIp = require("./src/helper/ip");
@@ -23,5 +24,7 @@ app.listen(PORT, () => {
 setInterval(() => {
   const metric = getMetric();
   const per = calculatePer(metric.usedMemory, metric.totalMemory);
-  console.log(`Memory Usage: ${per} | CPU Usage: ${metric.cpuUsage.user} | Uptime: ${metric.uptime}` );
+  console.log(
+    `Memory Usage: ${per} | CPU Usage: ${metric.cpuUsage.user} | Uptime: ${metric.uptime}`
+  );
 }, INTERVAL_PERIOD);

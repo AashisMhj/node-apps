@@ -1,6 +1,8 @@
-const directoryPath = require('../config');
 const fs = require('fs');
 const path = require('path');
+
+const directoryPath = require('../config');
+
 
 const commonVideoExtensions = [
     '.webm', '.avi', '.mp4', '.mkv'
