@@ -7,7 +7,7 @@ const commonVideoExtensions = [
 ]
 
 // get all the list of files from given dir| dir+req.auery.path
-const getVideosofDir = (req, res,)=>{
+const getVideosOfDir = (req, res,)=>{
     let newDirectoryPath = "";
     // get parent path if exists
     if(req.query.path){
@@ -106,7 +106,7 @@ const downloadVideo = (req, res)=>{
 
 module.exports = {
     getVideo,
-    getVideosofDir,
+    getVideosOfDir,
     getVideos,
     downloadVideo
 }

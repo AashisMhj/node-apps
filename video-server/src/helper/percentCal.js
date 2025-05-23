@@ -1,6 +1,6 @@
 function calculatePer(value, total){
-    const value_parserd = parseInt(value);
-    const total_parsed = parseInt(total);
-    return (value_parserd/ total_parsed) * 100;
+    const valueParsed = parseInt(value);
+    const totalParsed = parseInt(total);
+    return ((valueParsed/ totalParsed) * 100).toFixed(2);
 }
 module.exports = calculatePer;
